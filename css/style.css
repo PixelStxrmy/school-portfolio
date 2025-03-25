@@ -114,7 +114,8 @@ main {
     padding: 5px;
     background-color: #323232;
     border-radius: 5px;
-    
+    box-shadow: #1e1e1e 0 0 5px;
+    height:70%;
 }
 
 .card-footer {
@@ -167,6 +168,42 @@ main {
     background-color: #323232;
     border-radius: 5px;
     font-size: 25px;
+}
+
+.info-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: fill;
+    align-items: fill;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card-header {
+    text-align: center;
+    background-color: #5eab9c;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.info-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #323232;
+    border-radius: 5px;
+    box-shadow: #1e1e1e 0 0 5px;
+    flex-grow: 1;
 }
 
 aside {
@@ -233,6 +270,12 @@ footer {
         width: 275px;
         height: 200px;
     }
+
+    .info-card {
+        width: 50%;
+        height: 100%;
+        font-size: 23px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -272,6 +315,16 @@ footer {
     .info-header h1 {
         font-size: 20px;
     }
+
+    .info-card {
+        width: 50%;
+        height: 75%;
+        font-size: 18px;
+    }
+
+    .info-card-body {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -289,10 +342,10 @@ footer {
     }
     
     nav a {
-        margin: 2%;
-        width: 400px;
-        height: 50px;
-        text-align: center;
+        margin-left: 1%;
+        width: 40px;
+        height: 30px;
+        font-size: 6px;
     }
     
     .info-body {
@@ -319,9 +372,27 @@ footer {
         height: 100%;
         padding: 0px;
     }
+
+    .info-card {
+        width: 50%;
+        height: 100%;
+        font-size: 12px;
+    }
+
+    .info-card-body {
+        font-size: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 360px) {
+
+    nav a {
+        margin-left: 1%;
+        width: 40px;
+        height: 30px;
+        font-size: 6px;
+    }
 
 .card {
     width: 100px;
@@ -345,6 +416,14 @@ footer {
 .card-footer a {
     width: 100%;
     padding: 0px;
+}
+
+.info-card {
+    font-size: 10px;
+}
+
+.info-card-body {
+    font-size: 12px;
 }
 
 }
