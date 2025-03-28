@@ -91,9 +91,8 @@ main {
     display: grid;
     grid-template-rows: 1fr 5fr;
     width: 400px;
-    height: 250px;
-    margin: 10px;
-    padding: 10px;
+    min-height: fit-content;
+    margin: 30px;
     border-radius: 5px;
     background-color: #323232;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -104,6 +103,7 @@ main {
     background-color: #5eab9c;
     border-radius: 10px;
     align-content: center;
+    box-shadow: #4e897d 0 0 5px;
 }
 
 .card-body {
@@ -113,10 +113,12 @@ main {
     align-content: center;
     text-align: center;
     padding: 5px;
-    background-color: #323232;
     border-radius: 5px;
-    box-shadow: #1e1e1e 0 0 5px;
-    height: 100%;
+    height: fit-content;
+}
+
+.project-description {
+    font-size: 15px;
 }
 
 .card-footer {
